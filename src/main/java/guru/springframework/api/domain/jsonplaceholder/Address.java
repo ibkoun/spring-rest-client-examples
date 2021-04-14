@@ -1,5 +1,5 @@
 
-package guru.springframework.api.domain;
+package guru.springframework.api.domain.jsonplaceholder;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -7,15 +7,16 @@ import java.util.Map;
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
-public class Location implements Serializable
+public class Address implements Serializable
 {
 
     private String street;
+    private String suite;
     private String city;
-    private String state;
-    private String postcode;
+    private String zipcode;
+    private Geo geo;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -3532048267747973846L;
+    private final static long serialVersionUID = -5024548918953836879L;
 
     public String getStreet() {
         return street;
@@ -23,6 +24,14 @@ public class Location implements Serializable
 
     public void setStreet(String street) {
         this.street = street;
+    }
+
+    public String getSuite() {
+        return suite;
+    }
+
+    public void setSuite(String suite) {
+        this.suite = suite;
     }
 
     public String getCity() {
@@ -33,20 +42,20 @@ public class Location implements Serializable
         this.city = city;
     }
 
-    public String getState() {
-        return state;
+    public String getZipcode() {
+        return zipcode;
     }
 
-    public void setState(String state) {
-        this.state = state;
+    public void setZipcode(String zipcode) {
+        this.zipcode = zipcode;
     }
 
-    public String getPostcode() {
-        return postcode;
+    public Geo getGeo() {
+        return geo;
     }
 
-    public void setPostcode(String postcode) {
-        this.postcode = postcode;
+    public void setGeo(Geo geo) {
+        this.geo = geo;
     }
 
     public Map<String, Object> getAdditionalProperties() {

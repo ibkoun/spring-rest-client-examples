@@ -1,25 +1,26 @@
 
-package guru.springframework.api.domain;
+package guru.springframework.api.domain.apifaketory;
 
 import java.io.Serializable;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
-public class Billing implements Serializable
+public class User implements Serializable
 {
 
-    private Card card;
+    private List<Datum> data = null;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = 6577338081290507077L;
+    private final static long serialVersionUID = -3337109495300817355L;
 
-    public Card getCard() {
-        return card;
+    public List<Datum> getData() {
+        return data;
     }
 
-    public void setCard(Card card) {
-        this.card = card;
+    public void setData(List<Datum> data) {
+        this.data = data;
     }
 
     public Map<String, Object> getAdditionalProperties() {

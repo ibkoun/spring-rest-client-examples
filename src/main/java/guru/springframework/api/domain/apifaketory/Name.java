@@ -1,5 +1,5 @@
 
-package guru.springframework.api.domain;
+package guru.springframework.api.domain.apifaketory;
 
 import java.io.Serializable;
 import java.util.HashMap;

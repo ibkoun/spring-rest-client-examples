@@ -1,5 +1,5 @@
 
-package guru.springframework.api.domain;
+package guru.springframework.api.domain.apifaketory;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -7,28 +7,19 @@ import java.util.Map;
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
-public class Job implements Serializable
+public class Billing implements Serializable
 {
 
-    private String title;
-    private String company;
+    private Card card;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -4985150429002262656L;
+    private final static long serialVersionUID = 6577338081290507077L;
 
-    public String getTitle() {
-        return title;
+    public Card getCard() {
+        return card;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getCompany() {
-        return company;
-    }
-
-    public void setCompany(String company) {
-        this.company = company;
+    public void setCard(Card card) {
+        this.card = card;
     }
 
     public Map<String, Object> getAdditionalProperties() {

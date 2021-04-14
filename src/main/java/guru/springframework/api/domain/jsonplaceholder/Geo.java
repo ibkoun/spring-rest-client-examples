@@ -1,26 +1,34 @@
 
-package guru.springframework.api.domain;
+package guru.springframework.api.domain.jsonplaceholder;
 
 import java.io.Serializable;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
-public class User implements Serializable
+public class Geo implements Serializable
 {
 
-    private List<Datum> data = null;
+    private String lat;
+    private String lng;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -3337109495300817355L;
+    private final static long serialVersionUID = 3147053591683923127L;
 
-    public List<Datum> getData() {
-        return data;
+    public String getLat() {
+        return lat;
     }
 
-    public void setData(List<Datum> data) {
-        this.data = data;
+    public void setLat(String lat) {
+        this.lat = lat;
+    }
+
+    public String getLng() {
+        return lng;
+    }
+
+    public void setLng(String lng) {
+        this.lng = lng;
     }
 
     public Map<String, Object> getAdditionalProperties() {
